@@ -14,6 +14,10 @@ class EntryListState extends State<EntryList> {
     return Scaffold(
       appBar: AppBar(title: Text('Bouldering diary')),
       body: buildList(),
+      floatingActionButton: FloatingActionButton(
+        onPressed: () => setState(() => print('hello')),
+        child: const Icon(Icons.add),
+      ),
     );
   }
 
